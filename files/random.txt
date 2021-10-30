@@ -1,0 +1,5 @@
+This program uses getc to read the first  80 input characters (or until the end of input)  and place them into a string named buffer. 
+This program uses getc to read the first  80 input characters (or until the end of input)  and place them into a string named buffer. 
+This program uses getc to read the first  80 input characters (or until the end of input)  and place them into a string named buffer. 
+
+
