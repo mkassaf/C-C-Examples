@@ -3,7 +3,7 @@ int main(){
     char name[20];
     double avg;
     FILE * fptr=NULL;
-    fptr=fopen("students.dat", "w");
+    fptr=fopen("files/students.dat", "w");
     if (fptr==NULL){
         printf( "File could not be opened\n" );
     } else{
@@ -15,7 +15,7 @@ int main(){
         fprintf(fptr, "%s %lf\n", "Tala", 47.31);
         fclose(fptr);
     }
-    fptr=fopen("students.dat", "r");
+    fptr=fopen("files/students.dat", "r");
     if (fptr==NULL){
         printf( "File could not be opened\n" );
     } else{
