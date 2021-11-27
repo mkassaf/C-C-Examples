@@ -7,7 +7,7 @@ int main() {
     char name[ 30 ]; // account name 
     double balance;  // account balance 
     
-    FILE *cfPtr;     // cfPtr = clients.dat file pointer 
+    FILE *cfPtr;     // cfPtr = clients.dat file pointer
  
     if ( ( cfPtr = fopen( "files/clients.dat", "w" ) ) == NULL ) {
         printf( "File could not be opened\n" );
