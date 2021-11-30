@@ -1,4 +1,1 @@
-
-Student::~Student() {
-    //printf("Deleteing student obj\n");
-}
+int Demo::privStatic = 0;//You must initlize it
