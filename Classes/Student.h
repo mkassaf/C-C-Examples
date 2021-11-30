@@ -1,6 +1,8 @@
 
-#include <stdio.h>
+#ifndef HEADER_FILE_NAME
+#define HEADER_FILE_NAME
 
+   
 class Student {
 private:
     /* data */
@@ -10,4 +12,4 @@ public:
 
 };
 
-
+#endif
