@@ -5,7 +5,16 @@
 
 using namespace std;
 
+/**
+ * In this lab you want to create a class for reading and writing a file. The class is called 
+ * MyFIile which contains a list of public methods and private variables.  
+ * This class writes into a binary file which contains integer numbers only. 
+ * There are write and read functions that write and read one integer each time as seen in the example below.  
+ * This class counts all write and read actions done by any object created from this class. 
+ * For example, every time you read from the file, you should count this action as read action and same for write to the file.
+ * See the example below which shows how your class will be called in the main function. 
 
+*/
 class MyFile{
     private:
         static int readAction;
