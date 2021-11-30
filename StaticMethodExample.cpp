@@ -1,7 +1,11 @@
 #include <iostream>
  
 using namespace std;
-
+/**
+ * The below code counts every object created from class Box
+ * We created a static counter called objectCount and a static method called getCount().
+ * 
+ */ 
 class Box {
    public:
       static int objectCount;
