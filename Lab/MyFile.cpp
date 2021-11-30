@@ -33,16 +33,16 @@ class MyFile{
         FILE* getFile(){
             return this->file;
         }
-        int getChar(){
-            int ch;
-            fread(&ch, 4, 1, this->file);
-            if(ch!= EOF)
+        int getInt(){
+            int number;
+            fread(&number, sizeof(int), 1, this->file);
+            if(number!= EOF)
                 this->readAction++;
-            return ch;
+            return number;
         }
-        void putChar(int c){
+        void putInt(int number){
             this->writeAction++;
-            fwrite(&c, 4, 1, this->file);
+            fwrite(&number, sizeof(int), 1, this->file);
         }
         void reset(){
             fseek(this->file, 0, SEEK_SET);
@@ -60,11 +60,11 @@ class MyFile{
         bool isEndOfFile(){
             return feof(this->file);
         }
-        void operator<<(int ch){
-            putChar(ch);
+        void operator<<(int number){
+            putInt(number);
         }
-        void operator>>(int& ch){
-            ch = getChar();
+        void operator>>(int& number){
+            number = getInt();
         }
         ~MyFile(){
             cout << "Closing the file" <<endl;
@@ -78,28 +78,28 @@ int MyFile::writeAction = 0;
 int main() {  
     
     MyFile file("myFile.data");
-    file.putChar(1);//Function write a char on the file
-    file.putChar(2);
+    file.putInt(1);//Function write a int on the file
+    file.putInt(2);
     file<<3;// An Operator Overloading to write to file
     file<<4;
     file.reset();
     cout << file.getNumberOfReadActions() << endl;//will print 0
     cout << file.getNumberOfWriteActions() << endl; //will print 4
-    int ch;
+    int number;
     while(!file.isEndOfFile()){
-        file>>ch;// An Operator Overloading to read from file and store in char
-        cout << ch;
+        file>>number;// An Operator Overloading to read from file and store in number
+        cout << number;
     }//will print 12341
     cout<<endl;
     file.reset();
     while(!file.isEndOfFile()){
-        ch = file.getChar();//Function write to char on the file
-        cout << ch;
+        number = file.getInt();//Function write a int on the file
+        cout << number;
     }//will print 12341
     cout<<endl;
     MyFile secondFile("myFile2.data");
-    secondFile.putChar(100);
-    secondFile.putChar(200);
+    secondFile.putInt(100);
+    secondFile.putInt(200);
     cout << secondFile.getNumberOfReadActions() << endl;//will print 10
     cout << secondFile.getNumberOfWriteActions() << endl; //will print 6
     return 0;  
