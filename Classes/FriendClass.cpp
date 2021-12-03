@@ -27,3 +27,7 @@ int main()  {
     b.display(a);  
     return 0;  
 }  
+/**
+ * In the above example, class B is declared as a friend inside the class A. 
+ * Therefore, B is a friend of class A. Class B can access the private members of class A.
+*/
