@@ -4,8 +4,8 @@ class Demo {
     public:  
     int a;  
     int b;  
-    int *p;  
-  
+    int *p;   
+    // test  
     Demo(){  
         p=new int;  
     }  
