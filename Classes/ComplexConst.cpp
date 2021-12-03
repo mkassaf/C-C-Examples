@@ -9,6 +9,8 @@ using namespace std;
  * A class is typically declared in a header file and a header file is typically included into many translation units. 
  * However, to avoid complicated linker rules, C++ requires that every object has a unique definition. 
  * That rule would be broken if C++ allowed in-class definition of entities that needed to be stored in memory as objects.
+ * 
+ * A const variable has to be declared within the class, but it cannot be defined in it. We need to define the const variable outside the class.
 */
 class NormalClass {
     
@@ -19,6 +21,9 @@ class NormalClass {
         NormalClass(int value) : constValue(100){
             this->value = value;
         }
+        NormalClass() : constValue(100){
+            this->value = 0;
+        }
         void printNonConst() {
             cout << " Value: " << this->value <<  endl;
             cout << " constValue: " << this->constValue << " constValue2: " << this->constValue2 <<  endl;
@@ -28,6 +33,7 @@ class NormalClass {
             cout << " constValue: " << this->constValue << " constValue2: " << this->constValue2 <<  endl;
         }
 };
+
 
 int main() {
 
