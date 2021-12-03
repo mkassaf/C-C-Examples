@@ -9,25 +9,23 @@ class Check {
 
     //++obj
     Check operator ++ ()  {
-        Check temp;
-        temp.i = ++i;
-        return temp;
+        ++this->i;
+        return *this;
     }
 
-    // obj++
+    // obj++, Notice int inside barcket which indicates postfix increment.
     Check operator ++ (int) {
         Check temp;
         temp.i = i++;
         return temp;
     }
-    //--obj
+    //--obj, 
     Check operator -- ()  {
-        Check temp;
-        temp.i = --i;
-        return temp;
+        --i;
+        return *this;
     }
 
-    //obj --
+    //obj --,  Notice int inside barcket which indicates postfix increment.
     Check operator -- (int) {
         Check temp;
         temp.i = i--;
