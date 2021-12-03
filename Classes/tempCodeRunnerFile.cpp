@@ -1,1 +1,1 @@
-obj.Display();//2
+printLength
