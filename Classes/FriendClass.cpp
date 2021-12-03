@@ -9,18 +9,18 @@ using namespace std;
  */   
 class A  {  
     private:
-    int x =5;  
-    friend class B;// friend class.
+        int x =5;  
+        friend class B;// friend class.
 };  
 class B  { 
-  private:
-    int x;   
-  public:  
-    void display(A &a)  
-    {  
-        cout<<"value of x is : "<<a.x;  
-    }  
+    private:
+        int x;   
+    public:  
+        void display(A &a) {  
+            cout<<"value of x is : "<<a.x << endl;  
+        }  
 };  
+
 int main()  {  
     A a;  
     B b;  
