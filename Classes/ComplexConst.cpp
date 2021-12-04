@@ -17,11 +17,12 @@ class NormalClass {
     public:
         int value;
         const int constValue;
+        const int constValue1;
         const int constValue2 =10;//This initialization is not recommended!, see point 2 above.
-        NormalClass(int value) : constValue(100){
+        NormalClass(int value) : constValue(100), constValue1(3){
             this->value = value;
         }
-        NormalClass() : constValue(100){
+        NormalClass() : constValue(100), constValue1(7){
             this->value = 0;
         }
         void printNonConst() {
