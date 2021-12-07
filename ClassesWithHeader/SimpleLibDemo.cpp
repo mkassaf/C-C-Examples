@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
-#include "simpleLib.cpp"
+#include "car.h"
 using namespace std;
 
 
 int main() {  
-    cout << add(1,2) << endl;
+
+    car x;
+
     return 0;  
 }   
 

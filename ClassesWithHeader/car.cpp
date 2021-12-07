@@ -4,10 +4,9 @@
 #include "car.h"
 
 using namespace std;
-
 car::car(/* args */)
 {
-    cout << "CAR \n";
+    cout << "CAR... \n";
 }
 
 car::~car()
