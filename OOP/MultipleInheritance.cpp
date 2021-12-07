@@ -31,6 +31,9 @@ class C : public A,public B  {
         cout<<"Addition of a and b is : "<<a+b;  
     }  
 };  
+
+//In the above example, class 'C' inherits two base classes 'A' and 'B' in a public mode.
+
 int main() {  
    C c;  
    c.setA(10);  
