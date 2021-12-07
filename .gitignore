@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+Classes/IntegerExample
+ClassesWithHeader/main
+ClassesWithHeader/test
+ExampleWithHeaders/Functions/Constant
+ExampleWithHeaders/Functions/Demo
+ExampleWithHeaders/Functions/Functions
+OOP/SimpleMethodInheritance
+OOP/SingleLevelInheritance
+Pointer/PointerExamp
