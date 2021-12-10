@@ -54,3 +54,11 @@ int main() {
 
     return 0;  
 }  
+/**
+ * The outpu
+ * The area is 20
+ * The is a Triangle
+ * The area is 10
+ * The is a Triangle
+ * The area is 9
+ */
