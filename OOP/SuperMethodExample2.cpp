@@ -48,9 +48,3 @@ int main(void) {
 
     return 0;  
 }  
-/**
- * The output
- * This is an Animal
- * This is a Dog
- * 
- */
