@@ -42,6 +42,7 @@ int main() {
     p1->display();//display:Parent: Z: 40 X: 5
     p1->displayVer();//displayVer:Child: Z: 40 Y: 10
 
+    ((Child *)p1)->display();//Type casting to call the display in the clid 
     return 0;  
 }  
 
